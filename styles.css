@@ -792,6 +792,35 @@ p {
   color: var(--cyan);
 }
 
+.company-link {
+  display: grid;
+  align-self: end;
+  gap: 7px;
+  padding: 20px 22px;
+  border: 1px solid rgba(117, 244, 219, 0.28);
+  border-radius: 12px;
+  background: rgba(3, 13, 11, 0.45);
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.company-link:hover {
+  border-color: var(--acid);
+  background: rgba(3, 13, 11, 0.72);
+  transform: translateY(-2px);
+}
+
+.company-link small {
+  color: var(--cyan);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+}
+
+.company-link strong {
+  color: #fff;
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+}
+
 .ubtech-layout {
   display: grid;
   max-width: var(--max);

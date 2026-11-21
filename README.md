@@ -29,7 +29,7 @@ Videos live in `assets/videos/`. Keep the existing filenames when replacing a cl
 - `ghrc-part-sorting-pi05.mp4`
 - `bare-hand-dexterous-teleoperation.mp4`
 
-The project-display videos are permanently muted, encoded at 1.25× speed, and carry a large, low-opacity `CHANG ZHANG` watermark at the center of the frame. The homepage background uses a separate muted, accelerated copy without a watermark because it is already obscured by the hero overlay. Original source footage remains unchanged.
+The project-display videos are permanently muted, encoded at 3× speed, loop automatically, and carry a large, low-opacity `CHANG ZHANG` watermark at the center of the frame. The homepage background uses a separate muted 1.25× copy without a watermark because it is already obscured by the hero overlay. Original source footage remains unchanged.
 
 ## Editing
 
