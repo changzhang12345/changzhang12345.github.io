@@ -806,6 +806,7 @@ p {
 
 .internship-aside {
   display: grid;
+  container-type: inline-size;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: 18px;
@@ -853,8 +854,8 @@ p {
   align-self: stretch;
   align-content: center;
   aspect-ratio: 1 / 1;
-  gap: 7px;
-  padding: 20px 22px;
+  gap: clamp(8px, 1.4cqi, 16px);
+  padding: clamp(12px, 3.5cqi, 34px);
   border: 1px solid rgba(117, 244, 219, 0.28);
   border-radius: 12px;
   background: rgba(3, 13, 11, 0.45);
@@ -870,13 +871,14 @@ p {
 .company-link small {
   color: var(--cyan);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 10px;
+  font-size: clamp(0.6875rem, 1.7cqi, 1.125rem);
   letter-spacing: 0.13em;
+  text-wrap: balance;
 }
 
 .company-link strong {
   color: #fff;
-  font-size: clamp(1.05rem, 2.8vw, 3.1rem);
+  font-size: clamp(1.125rem, 7cqi, 4.25rem);
   line-height: 1.12;
   text-wrap: balance;
 }
