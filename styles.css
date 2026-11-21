@@ -793,10 +793,11 @@ p {
 }
 
 .section-heading-light {
-  max-width: 1500px;
-  grid-template-columns: minmax(360px, 0.72fr) minmax(0, 1.28fr);
+  width: 100%;
+  max-width: none;
+  grid-template-columns: minmax(400px, 0.62fr) minmax(0, 1.38fr);
   align-items: start;
-  gap: clamp(40px, 5vw, 72px);
+  gap: clamp(32px, 3.2vw, 60px);
 }
 
 .section-heading-light h2 {
