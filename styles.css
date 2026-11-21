@@ -619,6 +619,28 @@ p {
   color: var(--acid);
 }
 
+.ood-note {
+  align-self: end;
+  padding: 20px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(117, 244, 219, 0.07);
+}
+
+.ood-note span {
+  color: var(--cyan);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.ood-note p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .ubtech-section {
   position: relative;
   overflow: hidden;
@@ -1047,6 +1069,10 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid rgba(255, 255, 255, 0.14);
     border-left: 0;
+  }
+
+  .ood-note {
+    grid-column: 1 / -1;
   }
 
   .contact-links {

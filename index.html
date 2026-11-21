@@ -180,11 +180,11 @@
               role="tab"
               aria-selected="false"
               data-video-src="assets/videos/pi05-eggplant-to-can.mp4"
-              data-video-label="EGGPLANT → CAN"
+              data-video-label="EGGPLANT → OPEN CAN"
             >
               <span>02</span>
-              <strong>Eggplant → Can</strong>
-              <small>Cross-object placement</small>
+              <strong>Eggplant → Open Can</strong>
+              <small>OOD target-state generalization</small>
             </button>
             <button
               class="policy-control"
@@ -198,6 +198,12 @@
               <strong>Surface Wiping</strong>
               <small>Contact-rich surface task</small>
             </button>
+            <div class="ood-note">
+              <span>OOD GENERALIZATION</span>
+              <p>
+                The can was never shown with its lid open in the training data. This demo probes whether the policy can place the eggplant into an unseen open-can target state.
+              </p>
+            </div>
           </div>
         </div>
       </section>
