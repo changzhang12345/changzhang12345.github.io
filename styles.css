@@ -792,6 +792,52 @@ p {
   color: var(--cyan);
 }
 
+.section-heading-light {
+  align-items: start;
+}
+
+.internship-aside {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.internship-photo {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(117, 244, 219, 0.28);
+  border-radius: 16px;
+  background: #07100d;
+}
+
+.internship-photo::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 66%, rgba(3, 10, 8, 0.74));
+}
+
+.internship-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.internship-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  inset: auto 18px 16px;
+  color: #fff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+}
+
 .company-link {
   display: grid;
   align-self: end;
