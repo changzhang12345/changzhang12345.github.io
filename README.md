@@ -19,6 +19,7 @@ A regular repository name also works. In that case, the Pages URL will be `https
 
 Videos live in `assets/videos/`. Keep the existing filenames when replacing a clip to avoid changing the page markup:
 
+- `hero-ball-background.mp4` (homepage background; muted and accelerated, without a watermark)
 - `ball-balance-100hz.mp4`
 - `groove-following.mp4`
 - `pi05-apple-to-pot.mp4`
@@ -28,14 +29,14 @@ Videos live in `assets/videos/`. Keep the existing filenames when replacing a cl
 - `ghrc-part-sorting-pi05.mp4`
 - `bare-hand-dexterous-teleoperation.mp4`
 
-The public video copies are permanently muted, encoded at 1.25× speed, and carry a semi-transparent `CHANG ZHANG` watermark in the upper-right safe area. Original source footage remains unchanged.
+The project-display videos are permanently muted, encoded at 1.25× speed, and carry a large, low-opacity `CHANG ZHANG` watermark at the center of the frame. The homepage background uses a separate muted, accelerated copy without a watermark because it is already obscured by the hero overlay. Original source footage remains unchanged.
 
 ## Editing
 
 Content is in `index.html`, layout and responsive styling are in `styles.css`, and video switching plus scroll-reveal behavior are in `script.js`.
+The hero portrait is stored at `assets/images/chang-zhang-portrait.jpg`.
 
 ## Before publishing
 
-- Add a public email address or LinkedIn profile if desired.
 - Reconfirm the contribution boundaries in every project description.
 - Keep internal code, configurations, and unpublished results out of the public repository.
