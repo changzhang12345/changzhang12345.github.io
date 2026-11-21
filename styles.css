@@ -793,14 +793,21 @@ p {
 }
 
 .section-heading-light {
+  max-width: 1500px;
+  grid-template-columns: minmax(360px, 0.72fr) minmax(0, 1.28fr);
   align-items: start;
+  gap: clamp(40px, 5vw, 72px);
+}
+
+.section-heading-light h2 {
+  font-size: clamp(3rem, 5vw, 5.6rem);
 }
 
 .internship-aside {
   display: grid;
-  grid-template-columns: clamp(180px, 16vw, 250px) minmax(150px, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
-  gap: 14px;
+  gap: 18px;
   min-width: 0;
 }
 
@@ -824,7 +831,7 @@ p {
 .internship-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center 48%;
 }
@@ -844,6 +851,7 @@ p {
   display: grid;
   align-self: stretch;
   align-content: center;
+  aspect-ratio: 1 / 1;
   gap: 7px;
   padding: 20px 22px;
   border: 1px solid rgba(117, 244, 219, 0.28);
@@ -1243,11 +1251,11 @@ footer a {
   }
 
   .internship-aside {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .internship-photo {
-    width: min(100%, 240px);
+    width: auto;
   }
 
   .experience-project-heading {
