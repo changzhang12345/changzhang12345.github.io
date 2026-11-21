@@ -28,7 +28,7 @@ Videos live in `assets/videos/`. Keep the existing filenames when replacing a cl
 - `ghrc-part-sorting-pi05.mp4`
 - `bare-hand-dexterous-teleoperation.mp4`
 
-The public video copies are permanently muted, encoded at 1.25× speed, and carry a subtle `CHANG ZHANG | 1.25x` watermark in the lower-right corner. Original source footage remains unchanged.
+The public video copies are permanently muted, encoded at 1.25× speed, and carry a semi-transparent `CHANG ZHANG` watermark in the upper-right safe area. Original source footage remains unchanged.
 
 ## Editing
 

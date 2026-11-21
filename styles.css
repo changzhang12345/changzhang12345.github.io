@@ -709,9 +709,96 @@ p {
 .ubtech-layout {
   display: grid;
   max-width: var(--max);
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: clamp(50px, 8vw, 120px);
+  grid-template-columns: 1fr;
+  gap: clamp(70px, 9vw, 130px);
   margin: 0 auto;
+}
+
+.experience-project {
+  min-width: 0;
+}
+
+.experience-project-heading {
+  display: grid;
+  grid-template-columns: 0.36fr 1fr;
+  align-items: end;
+  gap: 24px 64px;
+  padding-bottom: 30px;
+}
+
+.experience-project-heading .project-index {
+  margin: 0 0 7px;
+}
+
+.experience-project-heading h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 4.7vw, 5rem);
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.experience-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.experience-media-grid figure {
+  margin: 0;
+}
+
+.experience-media-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.experience-media-single .repo-video-player {
+  min-height: 440px;
+}
+
+.experience-project-copy {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 0.72fr);
+  gap: clamp(30px, 5vw, 70px);
+  align-items: start;
+  padding-top: 30px;
+}
+
+.experience-lead {
+  max-width: 820px;
+  margin: 0;
+  color: #d7e8e2;
+  font-size: clamp(1.08rem, 1.7vw, 1.4rem);
+  line-height: 1.58;
+}
+
+.pipeline-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin: 28px 0;
+}
+
+.pipeline-line span {
+  padding: 8px 11px;
+  border: 1px solid rgba(117, 244, 219, 0.25);
+  border-radius: 999px;
+  color: #b9e7dc;
+  font-size: 13px;
+}
+
+.pipeline-line i {
+  color: var(--acid);
+  font-style: normal;
+}
+
+.experience-project .source-note {
+  max-width: 760px;
+  padding-left: 18px;
+  border-left: 2px solid var(--acid);
+  color: #8aa99e;
+  font-size: 14px;
 }
 
 .ubtech-demo {
@@ -1031,6 +1118,21 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .experience-project-heading,
+  .experience-project-copy,
+  .experience-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-project-heading {
+    align-items: start;
+    gap: 14px;
+  }
+
+  .experience-project-heading h3 {
+    font-size: clamp(2.2rem, 10vw, 4.2rem);
+  }
+
   .ubtech-demo {
     grid-template-columns: 1fr;
   }
@@ -1188,6 +1290,10 @@ footer a {
   }
 
   .repo-video-player {
+    min-height: 220px;
+  }
+
+  .experience-media-single .repo-video-player {
     min-height: 220px;
   }
 
