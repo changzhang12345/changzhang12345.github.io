@@ -305,21 +305,13 @@ p {
 
 .intro-band {
   display: grid;
-  grid-template-columns: 0.55fr 1.45fr;
+  grid-template-columns: 1fr;
   min-height: 180px;
   align-items: center;
-  gap: 40px;
   padding: 32px clamp(24px, 6vw, 96px);
   overflow: hidden;
   background: var(--acid);
   color: var(--ink);
-}
-
-.intro-band p {
-  margin: 0;
-  font-size: clamp(1.25rem, 2vw, 1.8rem);
-  font-weight: 760;
-  letter-spacing: -0.03em;
 }
 
 .marquee {
