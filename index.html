@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chang Zhang's robotics and embodied AI portfolio: visual feedback control, Real2Sim2Real, VLA, and robot policy learning."
+    />
+    <meta name="theme-color" content="#07100d" />
+    <title>Chang Zhang · Robotics & Embodied AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to selected work</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Back to the top">
+        <span class="brand-mark" aria-hidden="true">ZC</span>
+        <span>Chang Zhang</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#ubtech">Experience</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <video
+          class="hero-video"
+          src="assets/videos/ball-balance-100hz.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          controlslist="nodownload noremoteplayback"
+          disablepictureinpicture
+          disableremoteplayback
+          data-playback-rate="1"
+          aria-label="High-frequency visual feedback ball-balancing experiment"
+        ></video>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> ROBOTICS · EMBODIED AI</p>
+          <h1 id="hero-title">
+            <span>From learned policies</span>
+            <em>to real-world robots.</em>
+          </h1>
+          <p class="hero-intro">
+            I'm Chang Zhang. I work on robot learning, visual feedback control, and Sim2Real. This portfolio highlights selected projects spanning task formulation, policy training, simulation, and real-robot validation.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Selected Work</a>
+            <a class="button button-ghost" href="#ubtech">Open-source Work</a>
+          </div>
+        </div>
+
+        <div class="hero-meta" aria-label="Focus areas">
+          <span>Visual Feedback</span>
+          <span>Policy Learning</span>
+          <span>Real2Sim2Real</span>
+        </div>
+        <a class="scroll-cue" href="#work" aria-label="Scroll to selected work">
+          <span>SCROLL</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="intro-band" aria-label="Focus areas">
+        <p>From perception loops to policy execution</p>
+        <div class="marquee" aria-hidden="true">
+          <span>ROBOT LEARNING</span><b>·</b><span>VLA</span><b>·</b><span>SIM2REAL</span><b>·</b><span>VISUAL CONTROL</span>
+        </div>
+      </section>
+
+      <section class="project-section project-section-dark" id="work">
+        <div class="section-heading reveal">
+          <p class="section-kicker">SELECTED WORK</p>
+          <h2>Agentic Robotics<br /><span>/ Real2Sim2Real</span></h2>
+          <p>
+            Projects in high-frequency visual feedback, precision trajectory execution, and robot manipulation—from environment modeling to system validation.
+          </p>
+        </div>
+
+        <article class="feature feature-wide reveal">
+          <div class="feature-media">
+            <video controls muted loop playsinline preload="metadata" controlslist="nodownload noremoteplayback" disablepictureinpicture disableremoteplayback data-playback-rate="1" src="assets/videos/ball-balance-100hz.mp4">
+              Your browser does not support embedded video.
+            </video>
+            <div class="media-label"><span>REAL-TIME CONTROL</span><b>100 Hz</b></div>
+          </div>
+          <div class="feature-copy">
+            <p class="project-index">VISUAL CLOSED LOOP</p>
+            <h3>Ball Balancing with High-frequency Visual Feedback</h3>
+            <p>
+              Built a high-frequency visual feedback loop so the controller can continuously respond to changes in the ball state. The clip shows the real experiment without presenting unverified success-rate claims.
+            </p>
+            <ul class="tag-list" aria-label="Technical tags">
+              <li>Visual Servoing</li>
+              <li>Closed-loop Control</li>
+              <li>Real-time Perception</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature-split reveal">
+          <div class="feature-media">
+            <video controls muted loop playsinline preload="metadata" controlslist="nodownload noremoteplayback" disablepictureinpicture disableremoteplayback data-playback-rate="1" src="assets/videos/groove-following.mp4">
+              Your browser does not support embedded video.
+            </video>
+            <div class="media-label"><span>PRECISION TASK</span><b>MULTI-VIEW 3D</b></div>
+          </div>
+          <div class="feature-copy">
+            <p class="project-index">FINE-GRAINED TRAJECTORY</p>
+            <h3>Multi-view Reconstruction for Precision Groove Following</h3>
+            <p>
+              Before execution, multiple camera views are fused to reconstruct local 3D geometry and generate the motion trajectory. The robot then follows the pre-planned path without relying on continuous close-range depth feedback.
+            </p>
+            <ul class="tag-list" aria-label="Technical tags">
+              <li>Multi-view Reconstruction</li>
+              <li>3D Geometry</li>
+              <li>Pre-planned Trajectory</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="policy-section" id="policy">
+        <div class="policy-title reveal">
+          <div>
+            <p class="section-kicker">POLICY EXPERIMENTS</p>
+            <h2>π0.5 Manipulation Tasks</h2>
+          </div>
+          <p>
+            Qualitative policy demonstrations across object–container pairs and surface-interaction tasks. Individual clips are presented as behavior examples, not statistical claims.
+          </p>
+        </div>
+
+        <div class="policy-lab reveal" data-video-lab>
+          <div class="policy-player">
+            <video
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              controlslist="nodownload noremoteplayback"
+              disablepictureinpicture
+              disableremoteplayback
+              data-playback-rate="1"
+              src="assets/videos/pi05-apple-to-pot.mp4"
+              data-main-video
+            >
+              Your browser does not support embedded video.
+            </video>
+            <div class="player-status"><i></i><span data-video-status>APPLE → POT</span></div>
+          </div>
+          <div class="policy-controls" role="tablist" aria-label="Select a manipulation task video">
+            <button
+              class="policy-control is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-video-src="assets/videos/pi05-apple-to-pot.mp4"
+              data-video-label="APPLE → POT"
+            >
+              <span>01</span>
+              <strong>Apple → Pot</strong>
+              <small>Target-container placement</small>
+            </button>
+            <button
+              class="policy-control"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-video-src="assets/videos/pi05-eggplant-to-can.mp4"
+              data-video-label="EGGPLANT → CAN"
+            >
+              <span>02</span>
+              <strong>Eggplant → Can</strong>
+              <small>Cross-object placement</small>
+            </button>
+            <button
+              class="policy-control"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-video-src="assets/videos/pi05-wipe.mp4"
+              data-video-label="SURFACE WIPING"
+            >
+              <span>03</span>
+              <strong>Surface Wiping</strong>
+              <small>Contact-rich surface task</small>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ubtech-section" id="ubtech">
+        <div class="ubtech-backdrop" aria-hidden="true"><span>UBTECH</span></div>
+        <div class="ubtech-inner">
+          <div class="section-heading section-heading-light reveal">
+            <p class="section-kicker">INDUSTRY EXPERIENCE</p>
+            <h2>VLA / Imitation Learning<br /><span>R&amp;D Internship</span></h2>
+          </div>
+
+          <div class="ubtech-layout">
+            <div class="ubtech-demo reveal">
+              <div class="ubtech-demo-media">
+                <video
+                  controls
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  controlslist="nodownload noremoteplayback"
+                  disablepictureinpicture
+                  disableremoteplayback
+                  data-playback-rate="1"
+                  src="assets/videos/walker-c1-apple-pick-place.mp4"
+                >
+                  Your browser does not support embedded video.
+                </video>
+                <div class="media-label"><span>REAL ROBOT</span><b>WALKER C1</b></div>
+              </div>
+              <div class="ubtech-demo-copy">
+                <p class="project-index">ROBOT MANIPULATION</p>
+                <h3>Apple Pick-and-Place</h3>
+                <p>
+                  A Walker C1 real-robot apple pick-and-place demo from my project work. The clip includes only the task process cleared for public disclosure.
+                </p>
+                <ul class="tag-list" aria-label="Technical tags">
+                  <li>Walker C1</li>
+                  <li>Pick-and-Place</li>
+                  <li>Real Robot</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="ubtech-demo ubtech-demo-reverse reveal">
+              <div class="ubtech-demo-media">
+                <video
+                  controls
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  controlslist="nodownload noremoteplayback"
+                  disablepictureinpicture
+                  disableremoteplayback
+                  data-playback-rate="1"
+                  src="assets/videos/bare-hand-dexterous-teleoperation.mp4"
+                >
+                  Your browser does not support embedded video.
+                </video>
+                <div class="media-label"><span>TELEOPERATION</span><b>BARE-HAND</b></div>
+              </div>
+              <div class="ubtech-demo-copy">
+                <p class="project-index">FULL PIPELINE</p>
+                <h3>Bare-hand Dexterous Teleoperation</h3>
+                <p>
+                  Developed the full teleoperation pipeline—from markerless hand tracking and pose retargeting to dexterous-hand control—and integrated it into the imitation learning / VLA data-collection and train–deploy workflow.
+                </p>
+                <ul class="tag-list" aria-label="Technical tags">
+                  <li>Hand Tracking</li>
+                  <li>Retargeting</li>
+                  <li>Dexterous Teleoperation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="ubtech-copy reveal">
+              <p class="lead">
+                Developed the end-to-end teleoperation pipeline and helped build an Isaac Sim + LeRobot imitation learning / VLA toolchain for Walker humanoids, spanning simulation, data collection and processing, policy training, and deployment validation.
+              </p>
+              <p>
+                Selected components have been released through public projects. Internal code, experiment configurations, and unpublished results are intentionally excluded.
+              </p>
+              <div class="tech-line">
+                <span>Isaac Sim</span><span>LeRobot</span><span>Imitation Learning</span><span>VLA</span>
+              </div>
+              <p class="source-note">
+                This page includes only project clips and repositories confirmed for public release. Confidential implementation details remain private.
+              </p>
+            </div>
+
+            <div class="repo-stack reveal">
+              <a
+                class="repo-card"
+                href="https://github.com/UBTECH-Robot/GlobalHumanoidRobotChallenge_2026_Baseline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="repo-top"><span>PUBLIC REPOSITORY</span><i aria-hidden="true"></i></div>
+                <h3>GHRC 2026 Baseline</h3>
+                <p>An open baseline for humanoid simulation, data collection, policy training, and deployment.</p>
+                <div class="repo-meta"><span>GitHub</span><span>View Repository</span></div>
+              </a>
+
+              <div class="repo-video">
+                <div class="repo-video-player">
+                  <video
+                    controls
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    controlslist="nodownload noremoteplayback"
+                    disablepictureinpicture
+                    disableremoteplayback
+                    data-playback-rate="1"
+                    src="assets/videos/ghrc-part-sorting-pi05.mp4"
+                  >
+                    Your browser does not support embedded video.
+                  </video>
+                </div>
+                <div class="repo-video-copy">
+                  <strong>Part Sorting · π0.5</strong>
+                  <span>GHRC 2026 task demo</span>
+                </div>
+              </div>
+
+              <a
+                class="repo-card"
+                href="https://github.com/LQX-Code-SH/Thinker-IL-LAB"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div class="repo-top"><span>PUBLIC REPOSITORY</span><i aria-hidden="true"></i></div>
+                <h3>Thinker-IL-LAB</h3>
+                <p>A simulation and imitation-learning toolchain for Walker humanoid robots.</p>
+                <div class="repo-meta"><span>GitHub</span><span>View Repository</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="section-kicker">LET'S BUILD ROBOTS THAT WORK</p>
+        <h2>Let's discuss what's next in<br />robot learning and embodied AI.</h2>
+        <p>Target roles: Robotics · Embodied AI · Robot Learning</p>
+        <div class="contact-links" aria-label="Email addresses">
+          <a href="mailto:zc_10271027@163.com">
+            <small>EMAIL</small>
+            <strong>zc_10271027@163.com</strong>
+          </a>
+          <a href="mailto:changz010203@gmail.com">
+            <small>GMAIL</small>
+            <strong>changz010203@gmail.com</strong>
+          </a>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="#ubtech">View Public Code</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Chang Zhang</span>
+      <span>Robotics & Embodied AI Portfolio</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
